@@ -151,7 +151,7 @@ if __name__ == '__main__':
     yolo4_model = Yolo4(score, iou, anchors_path, classes_path, model_path)
 
 
-    img = "000341.jpg"
+    img = "images/fire00.jpg"
     image = Image.open(img)
 
     result = yolo4_model.detect_image(image, model_image_size=model_image_size)

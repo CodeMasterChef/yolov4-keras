@@ -17,9 +17,11 @@ pip3 install -r setup.txt
 ```
 
 ## Download Yolov4 model:
-Download yolo4-custom_last.weights file at link: https://drive.google.com/file/d/1-K2R_V8sicX-hljIJx2fXBCMeHaYEMtc/view?usp=sharing
+Download yolo4-custom_last.weights at link: https://drive.google.com/drive/folders/1dB1c2FET8W67PbChg6anIO1ns2aXGr3H?usp=sharing
 
 ## Convert YOLOv4 model to Keras Model:
+
+We need to *.h5 file to run with Keras. If you are lazy to convert it, you can download yolo4_weight.h5 file at above link.
 
 Open convert.py and notice this source:
 
@@ -64,4 +66,10 @@ Run the test.py file:
 
 ```
 python test.py
+```
+
+Run with video:
+
+```
+python3 test_with_video.py -i video/01.mp4
 ```
