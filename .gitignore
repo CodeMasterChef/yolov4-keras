@@ -1,4 +1,2 @@
 myenv
-*.h5
-*.weights
 *.pyc
